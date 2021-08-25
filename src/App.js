@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import { extendTheme } from '@chakra-ui/react';
 import Features from './components/Home/Fatures';
 import Roadmap from './components/Home/Roadmap';
+import DetailsBox from './components/Home/DetailsBox';
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
   brand: {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/">
             <Hero />
             <Features />
+            <DetailsBox />
             <Roadmap />
           </Route>
         </Switch>

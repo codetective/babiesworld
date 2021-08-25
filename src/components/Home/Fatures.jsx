@@ -3,20 +3,17 @@ import React from 'react';
 import {
   Box,
   Container,
-  Button,
   chakra,
   Flex,
   SimpleGrid,
   Stack,
 } from '@chakra-ui/react';
-import { Link } from 'react-scroll';
-import { FaCaretDown } from 'react-icons/fa';
 
 export default function Features() {
   return (
     <Flex bg="#F9FAFB" w="full" justifyContent="center" alignItems="center">
       <Container maxW="container.xl" px="8">
-        <Stack spacing={[10, 10, 20]} py={['110px', '110px', 60]} mx="auto">
+        <Stack spacing={[10, 10, 20]} py={['60px', '60px', 20]} mx="auto">
           <SimpleGrid
             id="about"
             alignItems="start"

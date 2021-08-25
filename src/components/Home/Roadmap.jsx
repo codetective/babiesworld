@@ -3,7 +3,7 @@ import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 import { Box, chakra, Container } from '@chakra-ui/react';
 export default function Roadmap() {
   return (
-    <Box>
+    <Box py="20">
       <Container maxW="container.xl">
         <chakra.h2
           mb={4}

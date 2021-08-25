@@ -13,7 +13,7 @@ import {
 
 const Hero = () => {
   return (
-    <Box bg="brand.200" py="10">
+    <Box bg="brand.200" py="10" mb="20">
       <Container maxW="container.xl" px="8">
         <SimpleGrid
           py="50"
