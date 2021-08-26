@@ -8,7 +8,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaDiscord } from 'react-icons/fa';
 import Logo from './Logo';
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -18,10 +18,12 @@ const SocialButton = ({ children, label, href }) => {
       bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
       rounded={'full'}
       w={8}
+      fontSize="30px"
       h={8}
       cursor={'pointer'}
       as={'a'}
       href={href}
+      target="_blank"
       display={'inline-flex'}
       alignItems={'center'}
       justifyContent={'center'}
@@ -130,13 +132,22 @@ export default function Footer() {
             {/* <Link href="https://frestotech.net">frestotech.net</Link> */}
           </Stack>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
+            <SocialButton
+              label={'YouTube'}
+              href={'https://discord.gg/G7GhAfve'}
+            >
+              <FaDiscord />
+            </SocialButton>
+            <SocialButton
+              label={'Twitter'}
+              href={'https://twitter.com/babiesworldnfts'}
+            >
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
-              <FaYoutube />
-            </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton
+              label={'Instagram'}
+              href={'https://www.instagram.com/babiesworldnft/'}
+            >
               <FaInstagram />
             </SocialButton>
           </Stack>
