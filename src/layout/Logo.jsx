@@ -5,7 +5,7 @@ const Logo = props => {
   return (
     <Box {...props}>
       <chakra.h1 fontWeight="600" fontSize="4xl">
-        frestobabies
+        babiesworld
       </chakra.h1>
     </Box>
   );

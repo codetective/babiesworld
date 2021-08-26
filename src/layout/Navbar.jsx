@@ -14,13 +14,13 @@ import { Link as ScrollLink } from 'react-scroll';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { HiMenuAlt2 } from 'react-icons/hi';
 
-const Links = ['Dashboard', 'Projects', 'Team'];
+const Links = ['About', 'Roadmap', 'Features'];
 
 const NavLink = ({ children }) => (
   <Link
     as={ScrollLink}
     activeClass="active"
-    to="footer"
+    to={children}
     spy={true}
     smooth={true}
     offset={-70}
@@ -43,7 +43,7 @@ export default function WithAction() {
 
   return (
     <>
-      <Box bg="brand.100" px={4} py="5">
+      <Box bg="brand.100" px={4} py="5" id="Header">
         <Container maxW="container.xl" px="5">
           {' '}
           <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
@@ -77,8 +77,14 @@ export default function WithAction() {
                   <NavLink key={link}>{link}</NavLink>
                 ))}
               </HStack>
-              <Button variant={'solid'} bg="brand.200" size={'sm'} mr={4}>
-                Link Metamask
+              <Button
+                colorScheme="purple"
+                variant={'solid'}
+                color="brand.100"
+                bg="brand.200"
+                size={'sm'}
+              >
+                Minting Soon.
               </Button>
             </Flex>
           </Flex>

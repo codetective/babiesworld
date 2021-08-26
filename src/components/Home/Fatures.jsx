@@ -11,7 +11,13 @@ import {
 
 export default function Features() {
   return (
-    <Flex bg="#F9FAFB" w="full" justifyContent="center" alignItems="center">
+    <Flex
+      bg="#F9FAFB"
+      w="full"
+      justifyContent="center"
+      alignItems="center"
+      id="About"
+    >
       <Container maxW="container.xl" px="8">
         <Stack spacing={[10, 10, 20]} py={['60px', '60px', 20]} mx="auto">
           <SimpleGrid

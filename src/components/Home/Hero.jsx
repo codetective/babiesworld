@@ -6,6 +6,7 @@ import {
   Flex,
   Center,
   Badge,
+  Button,
   Container,
   SimpleGrid,
   Image,
@@ -57,7 +58,7 @@ const Hero = () => {
                 color={useColorModeValue('brand.600', 'gray.300')}
                 lineHeight="shorter"
               >
-                Welcome to Fresto's Babies World!
+                Welcome to Babies World!
               </chakra.h1>
 
               <chakra.p
@@ -72,6 +73,15 @@ const Hero = () => {
                 A rich collection of 10,000 uniquely crafted NFT babies, one for
                 every beautiful baby ever made!
               </chakra.p>
+              <Button
+                variant={'solid'}
+                colorScheme="purple"
+                bg="brand.100"
+                size={'lg'}
+                color="brand.200"
+              >
+                Minting Soon.
+              </Button>
             </Flex>
           </Center>
           <Box>

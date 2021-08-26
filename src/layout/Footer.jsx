@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import Logo from './Logo';
+import { Link as ScrollLink } from 'react-scroll';
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -48,10 +49,69 @@ export default function Footer() {
       >
         <Logo />
         <Stack direction={'row'} spacing={6}>
-          <Link href={'#'}>Home</Link>
-          <Link href={'#'}>About</Link>
-          <Link href={'#'}>Blog</Link>
-          <Link href={'#'}>Contact</Link>
+          <Link
+            as={ScrollLink}
+            activeClass="active"
+            to={'Header'}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            px={2}
+            py={1}
+            rounded={'md'}
+            color="white"
+          >
+            Top
+          </Link>
+          <Link
+            as={ScrollLink}
+            activeClass="active"
+            to={'About'}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            px={2}
+            py={1}
+            rounded={'md'}
+            color="white"
+            href={'#'}
+          >
+            About
+          </Link>
+          <Link
+            as={ScrollLink}
+            activeClass="active"
+            to={'Features'}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            px={2}
+            py={1}
+            rounded={'md'}
+            color="white"
+            href={'#'}
+          >
+            Features
+          </Link>
+          <Link
+            as={ScrollLink}
+            activeClass="active"
+            to={'Roadmap'}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            px={2}
+            py={1}
+            rounded={'md'}
+            color="white"
+            href={'#'}
+          >
+            Roadmap
+          </Link>
         </Stack>
       </Container>
 
@@ -65,7 +125,10 @@ export default function Footer() {
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}
         >
-          <Text>© 2021 Frestotech Technologies. </Text>
+          <Stack>
+            <Text>© 2021 Frestotech Labs Africa. </Text>
+            {/* <Link href="https://frestotech.net">frestotech.net</Link> */}
+          </Stack>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} href={'#'}>
               <FaTwitter />
