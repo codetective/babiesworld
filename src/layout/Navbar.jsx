@@ -1,18 +1,6 @@
-import {
-  Box,
-  Flex,
-  HStack,
-  Link,
-  Button,
-  useDisclosure,
-  useColorModeValue,
-  Stack,
-  Container,
-} from '@chakra-ui/react';
+import { Box, Flex, HStack, Link, Button, Container } from '@chakra-ui/react';
 import { Link as ScrollLink } from 'react-scroll';
-
-import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { HiMenuAlt2 } from 'react-icons/hi';
+import Logo from './Logo';
 
 const Links = ['About', 'Roadmap', 'Features'];
 
@@ -30,8 +18,10 @@ const NavLink = ({ children }) => (
     rounded={'md'}
     color="white"
     _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
+      textDecoration: 'underline',
+    }}
+    _focus={{
+      bg: 'none',
     }}
   >
     {children}
@@ -39,16 +29,19 @@ const NavLink = ({ children }) => (
 );
 
 export default function WithAction() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-
   return (
     <>
-      <Box bg="brand.100" px={4} py="5" id="Header">
+      <Box bg="brand.100" px={4} py={[8, 8, 5, 5]} id="Header">
         <Container maxW="container.xl" px="5">
           {' '}
-          <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+          <Flex
+            h={16}
+            alignItems={'center'}
+            flexDir={['column', 'column', 'row', 'row']}
+            justifyContent={'space-between'}
+          >
             <HStack>
-              <Button
+              {/* <Button
                 fontSize="25px"
                 px="2"
                 textAlign="center"
@@ -61,17 +54,19 @@ export default function WithAction() {
               >
                 {' '}
                 {isOpen ? <AiOutlineCloseCircle /> : <HiMenuAlt2 />}
-              </Button>
+              </Button> */}
               <HStack spacing={8} alignItems={'center'}>
-                <Box color="white">Logo</Box>
+                <Box color="white">
+                  <Logo />
+                </Box>
               </HStack>
             </HStack>
             <Flex alignItems={'center'}>
               <HStack
                 pr="4"
                 as={'nav'}
-                spacing={4}
-                display={{ base: 'none', md: 'flex' }}
+                spacing={2}
+                display={{ base: 'flex', md: 'flex' }}
               >
                 {Links.map(link => (
                   <NavLink key={link}>{link}</NavLink>
@@ -84,11 +79,11 @@ export default function WithAction() {
                 bg="brand.200"
                 size={'sm'}
               >
-                Minting Soon.
+                Minting Soon!.
               </Button>
             </Flex>
           </Flex>
-          {isOpen ? (
+          {/* {isOpen ? (
             <Box pb={4} display={{ md: 'none' }}>
               <Stack as={'nav'} spacing={4}>
                 {Links.map(link => (
@@ -96,7 +91,7 @@ export default function WithAction() {
                 ))}
               </Stack>
             </Box>
-          ) : null}
+          ) : null} */}
         </Container>
       </Box>
     </>
