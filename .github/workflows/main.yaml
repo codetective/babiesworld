@@ -30,7 +30,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ${{ secrets.SERVER }}
-        ftp-username: ${{ secrets.USERNAME }}
+        ftp-server: ftp.babiesworldnft.com
+        ftp-username: codetective@babiesworldnft.com
         ftp-password: ${{ secrets.PASSWORD }}
         local-dir: build/
