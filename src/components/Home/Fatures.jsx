@@ -80,7 +80,7 @@ export default function Features() {
             </Box>
             <Box w="full" h="full">
               <Image
-                alt="3 women looking at a laptop"
+                alt="awesome baby"
                 src={baby1}
                 fit="contain"
                 h={{ base: 'full', md: '90%' }}
