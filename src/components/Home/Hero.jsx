@@ -11,10 +11,11 @@ import {
   SimpleGrid,
   Image,
 } from '@chakra-ui/react';
+import baby3 from '../../assets/baby-3.png';
 
 const Hero = () => {
   return (
-    <Box bg="brand.200" py="10" mb="20">
+    <Box bg="brand.200" py="10">
       <Container maxW="container.xl" px="8">
         <SimpleGrid
           py="50"
@@ -86,13 +87,12 @@ const Hero = () => {
           </Center>
           <Box>
             <Image
-              src="https://images.unsplash.com/photo-1531548731165-c6ae86ff6491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
               alt="3 women looking at a laptop"
-              fit="cover"
+              src={baby3}
+              fit="contain"
               w="full"
-              h={{ base: 64, md: 'full' }}
-              bg="gray.100"
-              loading="lazy"
+              h={{ base: 'full', md: '90%' }}
+              // bg="gray.100"
             />
           </Box>
         </SimpleGrid>

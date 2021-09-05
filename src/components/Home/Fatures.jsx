@@ -7,7 +7,10 @@ import {
   Flex,
   SimpleGrid,
   Stack,
+  Image,
 } from '@chakra-ui/react';
+import baby1 from '../../assets/baby1.png';
+import baby2 from '../../assets/baby2.png';
 
 export default function Features() {
   return (
@@ -17,12 +20,13 @@ export default function Features() {
       justifyContent="center"
       alignItems="center"
       id="About"
+      pt="20"
     >
       <Container maxW="container.xl" px="8">
         <Stack spacing={[10, 10, 20]} py={['60px', '60px', 20]} mx="auto">
           <SimpleGrid
             id="about"
-            alignItems="start"
+            alignItems="center"
             columns={{ base: 1, md: 2 }}
             mb={24}
             spacingY={{ base: 10, md: 32 }}
@@ -74,8 +78,16 @@ export default function Features() {
                 Read More
               </Button> */}
             </Box>
-            <Box w="full" h="full" py={48} bg="gray.200"></Box>
+            <Box w="full" h="full">
+              <Image
+                alt="3 women looking at a laptop"
+                src={baby1}
+                fit="contain"
+                h={{ base: 'full', md: '90%' }}
+              />
+            </Box>
           </SimpleGrid>
+          {/* second row starts */}
           <SimpleGrid
             alignItems="center"
             columns={{ base: 1, md: 2 }}
@@ -127,7 +139,14 @@ export default function Features() {
                 Learn More
               </Button> */}
             </Box>
-            <Box w="full" h="full" py={48} bg="gray.200"></Box>
+            <Box w="full" h="full">
+              <Image
+                alt="3 women looking at a laptop"
+                src={baby2}
+                fit="contain"
+                h={{ base: 'full', md: '90%' }}
+              />
+            </Box>
           </SimpleGrid>
         </Stack>
       </Container>
