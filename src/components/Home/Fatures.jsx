@@ -109,7 +109,7 @@ export default function Features() {
             </Box>
             <Box w="full">
               <Image
-                alt="3 women looking at a laptop"
+                alt="amazing babies world baby"
                 src={baby2}
                 fit="contain"
               />
