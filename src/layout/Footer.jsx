@@ -50,7 +50,7 @@ export default function Footer() {
         align={'center'}
       >
         <Logo />
-        <Stack direction={'row'} spacing={6}>
+        <Stack direction={'row'} spacing={{ base: 2, md: 4 }}>
           <Link
             as={ScrollLink}
             activeClass="active"

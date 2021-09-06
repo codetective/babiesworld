@@ -45,7 +45,7 @@ export default function DetailsBox() {
             shadow="xl"
             bg={useColorModeValue('white', 'gray.800')}
             px={8}
-            py={40}
+            py={20}
             mx="auto"
           >
             <SimpleGrid

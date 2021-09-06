@@ -12,6 +12,7 @@ const NavLink = ({ children }) => (
     spy={true}
     smooth={true}
     offset={-70}
+    fontSize={['16px', '20px']}
     duration={500}
     px={2}
     py={1}
@@ -41,20 +42,6 @@ export default function WithAction() {
             justifyContent={'space-between'}
           >
             <HStack>
-              {/* <Button
-                fontSize="25px"
-                px="2"
-                textAlign="center"
-                aria-label={'Open Menu'}
-                display={{ md: 'none' }}
-                onClick={isOpen ? onClose : onOpen}
-                _focus={{
-                  boxShadow: 'none',
-                }}
-              >
-                {' '}
-                {isOpen ? <AiOutlineCloseCircle /> : <HiMenuAlt2 />}
-              </Button> */}
               <HStack spacing={8} alignItems={'center'}>
                 <Box color="white">
                   <Logo />
@@ -65,7 +52,7 @@ export default function WithAction() {
               <HStack
                 pr="4"
                 as={'nav'}
-                spacing={2}
+                spacing={{ base: 0, md: 2 }}
                 display={{ base: 'flex', md: 'flex' }}
               >
                 {Links.map(link => (
@@ -79,19 +66,10 @@ export default function WithAction() {
                 bg="brand.200"
                 size={'sm'}
               >
-                Minting Soon!.
+                Mint Soon!.
               </Button>
             </Flex>
           </Flex>
-          {/* {isOpen ? (
-            <Box pb={4} display={{ md: 'none' }}>
-              <Stack as={'nav'} spacing={4}>
-                {Links.map(link => (
-                  <NavLink key={link}>{link}</NavLink>
-                ))}
-              </Stack>
-            </Box>
-          ) : null} */}
         </Container>
       </Box>
     </>

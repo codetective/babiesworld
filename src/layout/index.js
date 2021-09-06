@@ -9,7 +9,16 @@ function Layout({ children }) {
       <Navbar />
 
       {children}
-      <Image src={collage} />
+      <Box
+        bgImage={"url('/babynftcollage.jpg')"}
+        bgPos="center"
+        bgBlendMode="darken"
+        bgColor="rgba(0,0,0,0.8)"
+      >
+        <Box m="auto" w={['full', 'full', 'full', '80%']}>
+          <Image src={collage} />
+        </Box>
+      </Box>
       <Footer />
     </Box>
   );

@@ -60,31 +60,9 @@ export default function Features() {
                 believe will help the world see the similarities in our diverse
                 cultures.
               </chakra.p>
-              {/* <Button
-                as={Link}
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={500}
-                to="benefits"
-                w={{ base: 'full', sm: 'auto' }}
-                size="lg"
-                bg="brand.100"
-                _hover={{ bg: 'gray.700' }}
-                color="gray.100"
-                rightIcon={<FaCaretDown />}
-              >
-                Read More
-              </Button> */}
             </Box>
-            <Box w="full" h="full">
-              <Image
-                alt="awesome baby"
-                src={baby1}
-                fit="contain"
-                h={{ base: 'full', md: '90%' }}
-              />
+            <Box w="full">
+              <Image alt="awesome baby" src={baby1} fit="contain" />
             </Box>
           </SimpleGrid>
           {/* second row starts */}
@@ -128,23 +106,12 @@ export default function Features() {
                 World NFT's; 20% of all sales (primary sale) will be donated to
                 children's institutions around the world.
               </chakra.p>
-              {/* <Button
-                w={{ base: 'full', sm: 'auto' }}
-                size="lg"
-                bg="brand.100"
-                _hover={{ bg: 'gray.700' }}
-                color="gray.100"
-                as="a"
-              >
-                Learn More
-              </Button> */}
             </Box>
-            <Box w="full" h="full">
+            <Box w="full">
               <Image
                 alt="3 women looking at a laptop"
                 src={baby2}
                 fit="contain"
-                h={{ base: 'full', md: '90%' }}
               />
             </Box>
           </SimpleGrid>
