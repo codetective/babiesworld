@@ -87,7 +87,7 @@ const Hero = () => {
           </Center>
           <Box>
             <Image
-              alt="3 women looking at a laptop"
+              alt="awesome babiesworld bay with doll"
               src={baby3}
               fit="contain"
               w="full"
