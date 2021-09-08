@@ -27,3 +27,30 @@ span {
   box-shadow: none;
   outline: none;
 }
+
+.beforeFooterBox {
+  animation-duration: 15000s;
+  animation-iteration-count: infinite;
+  animation-name: SCROLL-BG;
+  animation-timing-function: linear;
+  background: url('../assets/tenbabies.jpg') 0px 0px / cover repeat
+    rgb(255, 255, 255);
+  height: 600px;
+}
+
+@-webkit-keyframes SCROLL-BG {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: -1e6px;
+  }
+}
+@keyframes SCROLL-BG {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: -1e6px;
+  }
+}
