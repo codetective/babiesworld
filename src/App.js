@@ -7,6 +7,7 @@ import { extendTheme } from '@chakra-ui/react';
 import Features from './components/Home/Fatures';
 import Roadmap from './components/Home/Roadmap';
 import DetailsBox from './components/Home/DetailsBox';
+import OurStory from './components/Home/OurStory';
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
   brand: {
@@ -26,6 +27,7 @@ function App() {
             <Hero />
             <Features />
             <DetailsBox />
+            <OurStory />
             <Roadmap />
           </Route>
         </Switch>
