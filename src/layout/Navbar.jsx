@@ -1,17 +1,17 @@
-import { Box, Flex, HStack, Link, Button, Container } from '@chakra-ui/react';
-import { Link as ScrollLink } from 'react-scroll';
+import { Box, Flex, HStack, Link, Container } from '@chakra-ui/react';
 import Logo from './Logo';
+import { Link as RLink } from 'react-router-dom';
+import { BiLinkExternal } from 'react-icons/bi';
 
-const Links = ['About', 'Roadmap', 'Features'];
+const Links = [
+  { path: '/', key: 'Home' },
+  { key: 'Mint', path: '/mint' },
+];
 
-const NavLink = ({ children }) => (
+const NavLink = ({ path, children }) => (
   <Link
-    as={ScrollLink}
-    activeClass="active"
-    to={children}
-    spy={true}
-    smooth={true}
-    offset={-70}
+    as={RLink}
+    to={path}
     fontSize={['16px', '20px']}
     duration={500}
     px={2}
@@ -50,24 +50,37 @@ export default function WithAction() {
             </HStack>
             <Flex alignItems={'center'}>
               <HStack
-                pr="4"
                 as={'nav'}
                 spacing={{ base: 0, md: 2 }}
                 display={{ base: 'flex', md: 'flex' }}
               >
                 {Links.map(link => (
-                  <NavLink key={link}>{link}</NavLink>
+                  <NavLink key={link.key} path={link.path}>
+                    {link.key}
+                  </NavLink>
                 ))}
+
+                <Link
+                  href="https://opensea.io"
+                  fontSize={['16px', '20px']}
+                  duration={500}
+                  display="flex"
+                  alignItems="center"
+                  isExternal
+                  px={2}
+                  py={1}
+                  rounded={'md'}
+                  color="white"
+                  _hover={{
+                    textDecoration: 'underline',
+                  }}
+                  _focus={{
+                    bg: 'none',
+                  }}
+                >
+                  <Box mr="1">Opensea</Box> <BiLinkExternal />
+                </Link>
               </HStack>
-              <Button
-                colorScheme="purple"
-                variant={'solid'}
-                color="brand.100"
-                bg="brand.200"
-                size={'sm'}
-              >
-                Mint Soon!.
-              </Button>
             </Flex>
           </Flex>
         </Container>

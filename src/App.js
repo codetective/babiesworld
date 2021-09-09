@@ -26,8 +26,8 @@ function App() {
           <Route path="/">
             <Hero />
             <Features />
-            <DetailsBox />
             <OurStory />
+            <DetailsBox />
             <Roadmap />
           </Route>
         </Switch>

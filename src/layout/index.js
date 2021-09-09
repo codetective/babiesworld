@@ -8,9 +8,7 @@ function Layout({ children }) {
       <Navbar />
 
       {children}
-      <Box m="auto" className="beforeFooterBox" w="100%">
-        {/* <Image src={collage} /> */}
-      </Box>
+      <Box m="auto" className="beforeFooterBox" w="100%"></Box>
       <Footer />
     </Box>
   );

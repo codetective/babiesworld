@@ -133,7 +133,7 @@ export default function Footer() {
           </Stack>
           <Stack direction={'row'} spacing={6}>
             <SocialButton
-              label={'YouTube'}
+              label={'Discord'}
               href={'https://discord.gg/G7GhAfve'}
             >
               <FaDiscord />

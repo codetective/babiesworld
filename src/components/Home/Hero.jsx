@@ -10,8 +10,10 @@ import {
   Container,
   SimpleGrid,
   Image,
+  HStack,
 } from '@chakra-ui/react';
 import baby3 from '../../assets/baby-3.png';
+import { FaDiscord } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -74,15 +76,37 @@ const Hero = () => {
                 A rich collection of 10,000 uniquely crafted NFT babies, one for
                 every beautiful baby ever made!
               </chakra.p>
-              <Button
-                variant={'solid'}
-                colorScheme="purple"
-                bg="brand.100"
-                size={'lg'}
-                color="brand.200"
+              <HStack spacing="5">
+                <Button
+                  as="a"
+                  target="_blank"
+                  href={'https://discord.gg/G7GhAfve'}
+                  colorScheme="purple"
+                  leftIcon={<FaDiscord />}
+                >
+                  Join our Discord
+                </Button>
+                {/* <Button
+                  variant={'solid'}
+                  colorScheme="purple"
+                  bg="brand.100"
+                  color="brand.200"
+                >
+                  Mint Now!
+                </Button> */}
+              </HStack>
+              <chakra.p
+                pr={{ base: 0, lg: 16 }}
+                mt={4}
+                fontSize="sm"
+                // color={useColorModeValue('brand.600', 'gray.400')}
+                color="brand.100"
+                letterSpacing="wider"
+                className="roboto"
+                fontWeight="semibold"
               >
-                Minting Soon.
-              </Button>
+                * Launching Soon!
+              </chakra.p>
             </Flex>
           </Center>
           <Box>
