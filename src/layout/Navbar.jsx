@@ -1,11 +1,11 @@
-import { Box, Flex, HStack, Link, Container } from '@chakra-ui/react';
+import { Box, Flex, HStack, Link, Container, Tooltip } from '@chakra-ui/react';
 import Logo from './Logo';
 import { Link as RLink } from 'react-router-dom';
 import { BiLinkExternal } from 'react-icons/bi';
 
 const Links = [
   { path: '/', key: 'Home' },
-  { key: 'Mint', path: '/mint' },
+  { key: 'Minting Soon!', path: '/' },
 ];
 
 const NavLink = ({ path, children }) => (
@@ -59,27 +59,37 @@ export default function WithAction() {
                     {link.key}
                   </NavLink>
                 ))}
-
-                <Link
-                  href="https://opensea.io"
-                  fontSize={['16px', '20px']}
-                  duration={500}
-                  display="flex"
-                  alignItems="center"
-                  isExternal
-                  px={2}
-                  py={1}
-                  rounded={'md'}
-                  color="white"
-                  _hover={{
-                    textDecoration: 'underline',
-                  }}
-                  _focus={{
-                    bg: 'none',
-                  }}
+                {/* remove this to launch */}
+                <Tooltip
+                  hasArrow
+                  label="Coming Soon"
+                  bg="gray.300"
+                  color="black"
                 >
-                  <Box mr="1">Opensea</Box> <BiLinkExternal />
-                </Link>
+                  <Link
+                    // href="https://opensea.io"
+                    // isExternal
+                    as={RLink}
+                    to="/"
+                    fontSize={['16px', '20px']}
+                    duration={500}
+                    display="flex"
+                    alignItems="center"
+                    px={2}
+                    py={1}
+                    rounded={'md'}
+                    color="white"
+                    _hover={{
+                      textDecoration: 'underline',
+                    }}
+                    _focus={{
+                      bg: 'none',
+                    }}
+                  >
+                    <Box mr="1">Opensea</Box> <BiLinkExternal />
+                  </Link>
+                </Tooltip>
+                {/* remove */}
               </HStack>
             </Flex>
           </Flex>

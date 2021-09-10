@@ -80,11 +80,11 @@ const Hero = () => {
                 <Button
                   as="a"
                   target="_blank"
-                  href={'https://discord.gg/G7GhAfve'}
+                  href={'https://discord.gg/7pKJS5gHHK'}
                   colorScheme="purple"
                   leftIcon={<FaDiscord />}
                 >
-                  Join our Discord
+                  Join the Discord channel
                 </Button>
                 {/* <Button
                   variant={'solid'}

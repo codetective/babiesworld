@@ -75,6 +75,21 @@ export default function DetailsBox() {
                   All babies are created equal, but each one is unique and
                   adorable in its own awesome way!
                 </chakra.p>
+                <chakra.p
+                  mb={6}
+                  fontSize={{ base: 'sm', md: 'lg' }}
+                  textAlign={{ base: 'center', sm: 'left' }}
+                  color={useColorModeValue('gray.600', 'gray.500')}
+                >
+                  Each baby is uniquely and handmade created from over 228
+                  possible attributes, while each BW NFT is definitely unique;
+                  <br />
+                  Some BW NFTs are Rare
+                  <br />
+                  Some are Super Rare
+                  <br />
+                  While some are extremely Exceptional
+                </chakra.p>
               </Box>
               <VStack
                 direction="column"
@@ -82,13 +97,13 @@ export default function DetailsBox() {
                 spacing={5}
                 alignItems="start"
               >
-                <Feature>6 Baby Kings</Feature>
-                <Feature>7 Baby Queens</Feature>
-                <Feature>15 Baby Super Heros</Feature>
-                <Feature>16 Baby Knights</Feature>
-                <Feature>24 Legendary Baby Warriors</Feature>
+                <Feature>6/10000 Baby Kings</Feature>
+                <Feature>7/10000 Baby Queens</Feature>
+                <Feature>15/10000 Baby Super Heros</Feature>
+                <Feature>16/10000 Baby Knights</Feature>
+                <Feature>24/10000 Legendary Baby Warriors</Feature>
                 <Feature>
-                  32 Babies representing 32 different cultures in Africa
+                  32/10000 Babies representing 32 different cultures in Africa
                 </Feature>
               </VStack>
             </SimpleGrid>
