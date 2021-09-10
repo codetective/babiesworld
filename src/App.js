@@ -10,6 +10,7 @@ import DetailsBox from './components/Home/DetailsBox';
 import OurStory from './components/Home/OurStory';
 import Faq from './components/Home/Faq';
 import Team from './components/Home/Team';
+import Royalties from './components/Home/Royalties';
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
   brand: {
@@ -30,6 +31,7 @@ function App() {
             <Features />
             <OurStory />
             <DetailsBox />
+            <Royalties />
             <Roadmap />
 
             <Box m="auto" className="beforeFooterBox" w="100%"></Box>
