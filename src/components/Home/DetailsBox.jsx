@@ -59,7 +59,16 @@ export default function DetailsBox() {
                 fontSize={{ base: 'md', md: 'lg' }}
                 color={useColorModeValue('gray.600', 'gray.500')}
               >
-                <b>The UNIQUE Clan</b>
+                <chakra.h2
+                  fontSize={{ base: '3xl', md: '4xl' }}
+                  fontWeight="extrabold"
+                  textAlign={{ base: 'center', sm: 'center' }}
+                  color={useColorModeValue('black')}
+                  lineHeight="shorter"
+                  letterSpacing="tight"
+                >
+                  The UNIQUE Clan
+                </chakra.h2>
                 <br /> BW NFTs are beautiful but some are even more beautiful
                 and amazing from their rarity and astonishing uniqueness of
                 their traits. The uniqueness of Nfts are found in the various
