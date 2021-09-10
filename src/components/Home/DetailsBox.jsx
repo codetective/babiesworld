@@ -34,7 +34,7 @@ export default function DetailsBox() {
               </chakra.h2>
               <chakra.p
                 mb={6}
-                fontSize={{ base: 'lg', md: 'xl' }}
+                fontSize={{ base: 'md', md: 'lg' }}
                 color={useColorModeValue('gray.600', 'gray.500')}
               >
                 All babies are created equal, but each one is unique and
@@ -42,7 +42,7 @@ export default function DetailsBox() {
               </chakra.p>
               <chakra.p
                 mb={6}
-                fontSize={{ base: 'md', md: 'xl' }}
+                fontSize={{ base: 'md', md: 'lg' }}
                 color={useColorModeValue('gray.600', 'gray.500')}
               >
                 Each baby is uniquely and handmade created from over 228
@@ -54,17 +54,33 @@ export default function DetailsBox() {
                 <br />
                 While some are extremely Exceptional!
               </chakra.p>
+              <chakra.p
+                mb={6}
+                fontSize={{ base: 'md', md: 'lg' }}
+                color={useColorModeValue('gray.600', 'gray.500')}
+              >
+                <b>The UNIQUE Clan</b>
+                <br /> BW NFTs are beautiful but some are even more beautiful
+                and amazing from their rarity and astonishing uniqueness of
+                their traits. The uniqueness of Nfts are found in the various
+                characteristic that distinguishes them which most times
+                determine the Nfts popularity. <br />
+                The unique Clan is a community with great benefits for owners in
+                possession of a particular set of Nfts with distinct and you
+                unique characters and attributes. 15% of royalties will be
+                shared among members of the unique clan monthly.
+              </chakra.p>
               <Stack w={{ base: '100%', md: '80%' }}>
                 <HStack justifyContent="space-between">
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     fontWeight="semibold"
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     The Unique Clan numbers:
                   </chakra.p>
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     68/10000
@@ -72,13 +88,13 @@ export default function DetailsBox() {
                 </HStack>
                 <HStack justifyContent="space-between" pl="3">
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     - Baby Kings
                   </chakra.p>
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     6/10000
@@ -86,13 +102,13 @@ export default function DetailsBox() {
                 </HStack>
                 <HStack justifyContent="space-between" pl="3">
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     - Baby Queens
                   </chakra.p>
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     7/10000
@@ -100,13 +116,13 @@ export default function DetailsBox() {
                 </HStack>
                 <HStack justifyContent="space-between" pl="3">
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     - Baby Super Heroes
                   </chakra.p>
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     15/10000
@@ -114,13 +130,13 @@ export default function DetailsBox() {
                 </HStack>
                 <HStack justifyContent="space-between" pl="3">
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     - Baby Knights
                   </chakra.p>
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     16/10000
@@ -128,13 +144,13 @@ export default function DetailsBox() {
                 </HStack>
                 <HStack justifyContent="space-between" pl="3">
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     - Legendary Baby Warriors
                   </chakra.p>
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     24/10000
@@ -142,19 +158,20 @@ export default function DetailsBox() {
                 </HStack>
                 <HStack justifyContent="space-between">
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     fontWeight="semibold"
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     Babies representing different cultures of the world
                   </chakra.p>
                   <chakra.p
-                    fontSize={{ base: 'md', md: 'xl' }}
+                    fontSize={{ base: 'md', md: 'lg' }}
                     color={useColorModeValue('gray.600', 'gray.500')}
                   >
                     32/10000
                   </chakra.p>
                 </HStack>
+                <Box></Box>
               </Stack>
             </Stack>
           </Box>
