@@ -32,7 +32,7 @@ const faqArray = [
   },
   {
     title: 'WHAT IS THE PRICE ?',
-    content: ' Each 👶 cost 0.08 ETH ',
+    content: ' Each 👶 cost 0.04 ETH ',
   },
   {
     title: ' HOW CAN I KNOW IF MY BW NFT AMONG THE UNIQUE CLAN ? ',
