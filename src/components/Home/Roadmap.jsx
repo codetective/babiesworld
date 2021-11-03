@@ -36,7 +36,7 @@ export default function Roadmap() {
             </chakra.h2>
             <p>
               10% of the collection will be airdropped to members of the
-              community before launch
+              community before launch.
             </p>
           </TimelineItem>
           <TimelineItem
