@@ -19,6 +19,28 @@ export default function Roadmap() {
         <Timeline lineColor={'teal'}>
           <TimelineItem
             key="001"
+            dateText="0% SALES"
+            style={{ color: '#b3cde0' }}
+            dateInnerStyle={{ background: '#b3cde0' }}
+          >
+            <chakra.h2
+              mb={5}
+              fontSize={{ base: 'xl', md: 'xl' }}
+              fontWeight="extrabold"
+              letterSpacing="tight"
+              color="gray.900"
+              lineHeight={{ md: 'shorter' }}
+              py="3"
+            >
+              Airdrop
+            </chakra.h2>
+            <p>
+              10% of the collection will be airdropped to members of the
+              community before launch
+            </p>
+          </TimelineItem>
+          <TimelineItem
+            key="002"
             dateText="10% SALES"
             style={{ color: '#b3cde0' }}
             dateInnerStyle={{ background: '#b3cde0' }}
@@ -40,7 +62,7 @@ export default function Roadmap() {
             </p>
           </TimelineItem>
           <TimelineItem
-            key="002"
+            key="003"
             dateText="25% SALES"
             dateInnerStyle={{ background: '#6497b1' }}
             style={{ color: '#61b8ff' }}
@@ -63,7 +85,7 @@ export default function Roadmap() {
             </p>
           </TimelineItem>
           <TimelineItem
-            key="003"
+            key="004"
             dateText="50% SALES"
             style={{ color: '#005b96 ' }}
             dateInnerStyle={{ background: '#005b96' }}
@@ -87,7 +109,7 @@ export default function Roadmap() {
             </p>
           </TimelineItem>
           <TimelineItem
-            key="004"
+            key="005"
             dateText="75% SALES"
             dateInnerStyle={{ background: '#03396c' }}
             style={{ color: '#03396c ' }}
@@ -110,7 +132,7 @@ export default function Roadmap() {
             </p>
           </TimelineItem>
           <TimelineItem
-            key="005"
+            key="006"
             dateText="100% SALES"
             dateInnerStyle={{ background: '#011f4b' }}
             style={{ color: '#011f4b' }}
