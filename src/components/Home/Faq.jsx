@@ -14,7 +14,7 @@ import React from 'react';
 const faqArray = [
   {
     title: 'When is the drop?',
-    content: 'The community will decide the drop date on the discord channel',
+    content: '15 November 2021, 20:00 UTC',
   },
   {
     title: 'where can i buy?',
@@ -32,7 +32,7 @@ const faqArray = [
   },
   {
     title: 'WHAT IS THE PRICE ?',
-    content: ' Each 👶 cost 0.04 ETH ',
+    content: ' Each 👶 cost 25 Matic ',
   },
   {
     title: ' HOW CAN I KNOW IF MY BW NFT AMONG THE UNIQUE CLAN ? ',
@@ -54,7 +54,7 @@ const faqArray = [
   },
   {
     title: 'WHERE CAN I SEE MY BABIES AFTER MINTING ?',
-    content: 'Immediately on the sale page',
+    content: 'Immediately on Opensea',
   },
 ];
 

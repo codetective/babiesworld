@@ -75,6 +75,9 @@ const Hero = () => {
               >
                 A rich collection of 10,000 uniquely crafted NFT babies, one for
                 every beautiful baby ever made!
+                <br />
+                *stored as ERC-721 tokens on the Ethereum compatible Polygon
+                Network.
               </chakra.p>
               <HStack spacing="5">
                 <Button
