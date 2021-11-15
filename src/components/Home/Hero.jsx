@@ -89,14 +89,16 @@ const Hero = () => {
                 >
                   Join the Discord channel
                 </Button>
-                {/* <Button
+                <Button
+                  as="a"
+                  href="https://mint.babiesworldnft.com"
                   variant={'solid'}
                   colorScheme="purple"
                   bg="brand.100"
                   color="brand.200"
                 >
                   Mint Now!
-                </Button> */}
+                </Button>
               </HStack>
               <chakra.p
                 pr={{ base: 0, lg: 16 }}
@@ -108,7 +110,7 @@ const Hero = () => {
                 className="roboto"
                 fontWeight="semibold"
               >
-                * Launching Soon!
+                * Launched 15 November 2021, 20:00 UTC
               </chakra.p>
             </Flex>
           </Center>
