@@ -112,6 +112,22 @@ const Hero = () => {
               >
                 * Launched 15 November 2021, 20:00 UTC
               </chakra.p>
+              <chakra.p
+                pr={{ base: 0, lg: 16 }}
+                mt={1}
+                ml="-1"
+                as="a"
+                target="_blank"
+                href="https://link.medium.com/PDUZIMImclb"
+                isExternal
+                fontSize="sm"
+                color="brand.100"
+                letterSpacing="wider"
+                fontWeight="semibold"
+                className="roboto pulsate"
+              >
+                📍 Learn how to mint. Click here!
+              </chakra.p>
             </Flex>
           </Center>
           <Box>
