@@ -54,3 +54,20 @@ span {
     background-position-x: -1e6px;
   }
 }
+
+.pulsate {
+  animation: pulsate 0.3s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0.5;
+}
+@keyframes pulsate {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
