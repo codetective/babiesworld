@@ -114,7 +114,7 @@ const Hero = () => {
               </chakra.p>
               <chakra.p
                 pr={{ base: 0, lg: 16 }}
-                mt={1}
+                mt={2}
                 ml="-1"
                 as="a"
                 target="_blank"
