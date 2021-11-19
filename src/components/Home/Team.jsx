@@ -15,6 +15,8 @@ import codetective from '../../assets/team/codetective.jpeg';
 import willie from '../../assets/team/willie.jpeg';
 import oriaku from '../../assets/team/oriaku.jpeg';
 import dominic from '../../assets/team/dominic.jpeg';
+import upgodwin from '../../assets/team/upgodwin.jpeg';
+import cypher from '../../assets/team/cypher.jpeg';
 
 function TeamMate({ src, name, desc }) {
   return (
@@ -81,8 +83,10 @@ export default function Team() {
             Other Members
           </chakra.h2>
           <SimpleGrid columns={[1, 2, 4]} spacing="5">
+            <TeamMate src={upgodwin} name="UpGodwin" desc="Community Manager" />
+            <TeamMate src={cypher} name="Cypher" desc="Publicity" />
+            <TeamMate src={codetective} name="Codetective" desc="Developer" />
             <TeamMate src={willie} name="Miss Willie" />
-            <TeamMate src={codetective} name="Codetective" />
             <TeamMate src={edidiong} name="Edidiong" />
             <TeamMate src={stephen} name="Stephen" />
           </SimpleGrid>
