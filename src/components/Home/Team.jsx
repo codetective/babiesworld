@@ -65,14 +65,22 @@ export default function Team() {
           <SimpleGrid columns={[1, 2, 4]} spacing="5">
             <TeamMate src={frestin} name="Frestin" desc="Creator" />
             <TeamMate src={dominic} name="Dominic" desc="Developer" />
+            <TeamMate src={codetective} name="Codetective" desc="Developer" />
+
+            <TeamMate src={edidiong} name="Defi.Messiah" desc="Developer" />
+
             <TeamMate src={oriaku} name="Oriaku" desc="Artist" />
+            <TeamMate src={upgodwin} name="UpGodwin" desc="Community Manager" />
+            <TeamMate src={cypher} name="Cypher" desc="Publicity" />
             <TeamMate
               src={temple}
               name="Temple"
               desc="Runs the entire babiesworld ops"
             />
+            <TeamMate src={willie} name="Miss Willie" />
+            <TeamMate src={stephen} name="Stephen" />
           </SimpleGrid>
-          <chakra.h2
+          {/* <chakra.h2
             py={8}
             fontSize={{ base: '2xl', md: '4xl' }}
             fontWeight="extrabold"
@@ -81,15 +89,8 @@ export default function Team() {
             lineHeight={{ md: 'shorter' }}
           >
             Other Members
-          </chakra.h2>
-          <SimpleGrid columns={[1, 2, 4]} spacing="5">
-            <TeamMate src={upgodwin} name="UpGodwin" desc="Community Manager" />
-            <TeamMate src={cypher} name="Cypher" desc="Publicity" />
-            <TeamMate src={codetective} name="Codetective" desc="Developer" />
-            <TeamMate src={willie} name="Miss Willie" />
-            <TeamMate src={edidiong} name="Edidiong" />
-            <TeamMate src={stephen} name="Stephen" />
-          </SimpleGrid>
+          </chakra.h2> */}
+          {/* <SimpleGrid columns={[1, 2, 4]} spacing="5"></SimpleGrid> */}
         </Stack>
       </Container>
     </Box>
