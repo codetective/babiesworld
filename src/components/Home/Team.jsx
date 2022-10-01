@@ -65,9 +65,9 @@ export default function Team() {
           <SimpleGrid columns={[1, 2, 4]} spacing="5">
             <TeamMate src={frestin} name="Frestin" desc="Creator" />
             <TeamMate src={dominic} name="Dominic" desc="Developer" />
-            <TeamMate src={codetective} name="Codetective" desc="Developer" />
 
             <TeamMate src={edidiong} name="Defi.Messiah" desc="Developer" />
+            <TeamMate src={codetective} name="Codetective" desc="Developer" />
 
             <TeamMate src={oriaku} name="Oriaku" desc="Artist" />
             <TeamMate src={upgodwin} name="UpGodwin" desc="Community Manager" />
